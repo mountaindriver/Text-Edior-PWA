@@ -25,7 +25,6 @@ export const putDb = async (content) => {
 
   const store = tx.objectStore('contact');
 
-  // missing info
   const request = store.add(content);
 
   const result = await request;
